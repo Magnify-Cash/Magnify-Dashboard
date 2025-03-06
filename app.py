@@ -234,8 +234,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Initialize model and session state
-logger.info("Initializing session state with default parameters")
 if 'params' not in st.session_state:
+    logger.info("Initializing session state with default parameters")
     st.session_state.params = {
         'loan_amount': 30.0,
         'term_days': 30,
