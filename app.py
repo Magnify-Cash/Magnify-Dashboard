@@ -1088,4 +1088,48 @@ st.markdown("""
     • Staker Economics Analysis<br>
     • Growth Metrics & Assumptions
     </div>
+""", unsafe_allow_html=True)
+
+# Add divider before CTAs
+st.markdown("<hr style='margin: 40px 0; border-top: 1px solid #E9D5FF;'>", unsafe_allow_html=True)
+
+# Add CTAs at the bottom
+st.markdown("""
+    <div style='display: flex; flex-direction: column; gap: 20px; margin: 20px 0; text-align: center;'>
+        <a href='https://pitch.magnify.cash/' target='_blank' style='
+            display: block;
+            background-color: #7C3AED;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(124, 58, 237, 0.2);
+            transition: all 0.3s ease;
+        '>
+            View the Magnify.Cash Pitch Deck
+        </a>
+        
+        <div style='margin-top: 20px;'>
+            <a href='https://github.com/Magnify-Cash/Magnify-Dashboard' target='_blank' style='
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                color: #7C3AED;
+                text-decoration: none;
+                font-weight: 500;
+            '>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                View source code on GitHub to verify calculations
+            </a>
+        </div>
+    </div>
+    
+    <div style='margin-top: 40px; text-align: center; color: #6B7280; font-size: 14px;'>
+        © 2024 Magnify Cash. All rights reserved.
+    </div>
 """, unsafe_allow_html=True) 
