@@ -79,6 +79,51 @@ For deploying on your own server:
 
 4. The app will be available at your-server-ip:8501
 
+### Deployment on DigitalOcean
+
+#### Option 1: Using DigitalOcean App Platform (Recommended)
+
+1. Sign up/login to your DigitalOcean account
+2. In the DigitalOcean dashboard, go to "Apps" and click "Create App"
+3. Connect your GitHub repository (Magnify-Cash/Magnify-Dashboard)
+4. Select the repository and branch to deploy
+5. DigitalOcean will automatically detect the Dockerfile and configure the app
+6. Configure your app:
+   - Ensure environment variables are set correctly
+   - Select appropriate region and plan
+   - Configure health checks
+7. Click "Create Resources" to deploy
+
+#### Option 2: Using doctl CLI
+
+1. Install the DigitalOcean CLI (doctl)
+   ```bash
+   # MacOS
+   brew install doctl
+   
+   # Linux
+   snap install doctl
+   
+   # Windows
+   # Download from https://github.com/digitalocean/doctl/releases
+   ```
+
+2. Authenticate with your API token
+   ```bash
+   doctl auth init
+   ```
+
+3. Deploy using the app.yaml specification
+   ```bash
+   doctl apps create --spec app.yaml
+   ```
+
+#### Monitoring and Maintenance
+
+1. View application logs in the DigitalOcean dashboard
+2. Set up alerts for resource usage and performance
+3. Configure auto-deployment by connecting to your GitHub repository
+
 ## Environment Variables
 
 Configure these environment variables for production:
